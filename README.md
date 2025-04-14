@@ -44,4 +44,12 @@ KeyWordManager is useful in various scenarios where you need to organize informa
 2.  Open the file in a modern web browser (like Chrome, Edge, Firefox, Safari).
 3.  Start adding tags or open an existing `.json` file (using the File menu, placeholder buttons, or drag-and-drop).
 
-> **Note:** Full file saving functionality relies on browser support for the File System Access API. Without it, saving uses LocalStorage backups, and you'll need to use "Save As..." if the API becomes available later or manually manage the JSON.
+> **Note:** Full file saving functionality relies on browser support for the **File System Access API**. Without it, saving uses LocalStorage backups, and you'll need to use "Save As..." if the API becomes available later or manually manage the JSON.
+
+## License and Usage
+
+KeyWordManager is provided free of charge.
+
+The source code contained within the HTML file is intended for public use. You are free to use, study, modify, and distribute this software as you see fit. There are no restrictions on its use or modification for personal or commercial purposes.
+
+The software is provided "as is", without warranty of any kind, express or implied.
