@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- UPDATE Title -->
-    <title>KeyWordManager-V1.4.3</title> <!-- Updated Version -->
+    <title>KeyWordManager-V1.4.4</title> <!-- Updated Version -->
 
     <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' width='32' height='32'%3E%3Cstyle%3Etext %7B fill: %23000%3B %7D @media (prefers-color-scheme: dark) %7B text %7B fill: %23FFF%3B %7D %7D%3C/style%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='-apple-system, BlinkMacSystemFont, %22Segoe UI%22, Roboto, Helvetica, Arial, sans-serif' font-size='43' font-weight='bold'%3EKWM%3C/text%3E%3C/svg%3E">
@@ -928,7 +928,7 @@ body.menu-open {
 
 
     <h1>
-        <span class="title-text">KeyWordManager-V1.4.3</span> <!-- Updated Version -->
+        <span class="title-text">KeyWordManager-V1.4.4</span> <!-- Updated Version -->
         <span id="currentFileNameDisplay" title="Current file">Untitled</span>
     </h1>
 
@@ -1282,7 +1282,7 @@ body.menu-open {
         const menuActionMap = {
             openFile: openFile, saveFile: saveFile, saveAsFile: saveFileAs, closeFile: closeCurrentFile, undo: undo, redo: redo, copyTags: copySelectedTags, removeTags: removeSelectedTags, // Changed clearTags to closeFile
             selectAllTags: () => { if (tagBeingEditedValue !== null) return; const visibleTags = getVisibleTagSpans(); if (visibleTags.length > 0) { visibleTags.forEach(span => { span.classList.add('selected'); span.setAttribute('aria-selected', 'true'); }); lastSelectedAnchorIndex = 0; updateMultiSelectActionButtons(); updateTagCountDisplay(); hideTagActions(false); if (visibleTags[0]) { const tagsList = getVisibleTagSpans(); tagsList.forEach(tag => tag.tabIndex = -1); visibleTags[0].tabIndex = 0; visibleTags[0].focus(); } showMessage(`Selected all ${visibleTags.length} visible tags.`, "info", 2000); } },
-            sortTags: sortTags, toggleTheme: toggleDarkMode, showAbout: () => { alert(`KeyWordManager V1.4.3\nCreated by Maya\nVisit www.mayameditation.org for more info.`); }
+            sortTags: sortTags, toggleTheme: toggleDarkMode, showAbout: () => { alert(`KeyWordManager V1.4.4\nCreated by Maya\nVisit www.mayameditation.org for more info.`); }
         };
 
         // --- Update Button States (includes menu state update) ---
